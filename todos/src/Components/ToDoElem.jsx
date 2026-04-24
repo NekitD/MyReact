@@ -9,7 +9,7 @@ export default function ToDoElem({todo, selCall, selected}){
         style = {backgroundColor: "rgb(178, 157, 255)"}
     }
     return (
-        <div className='ToDo' onClick={selCall(todo)}>
+        <div className='ToDo' style={style}  onClick={selCall(todo)}>
             <h1 className='id'>{todo.id}</h1>
             <h1 className='name'>{todo.name}</h1>
             <h1 className='status'>{todo.status}</h1>
