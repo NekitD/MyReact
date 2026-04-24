@@ -5,10 +5,9 @@ import Form from "./TeacherForm"
 
 export default function Teachers({data}){
     const [selectedTeach, setSelectedTeach] = useState(0);
-    console.log(selectedTeach);
     return (
         <div className='Teachers'>
-            <Form teacher={selectedTeach}/>
+            <Form data={selectedTeach}/>
             <div className='Teachers__List'>
                 {data.map((teacher)=>{
                     return (
