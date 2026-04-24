@@ -1,0 +1,7 @@
+.Preview{
+    width: 100%;
+    height: 25vh;
+    background-image: url("../../public/preview__back.jpeg");
+    background: contain;
+    background-position-y: 50%;
+}
