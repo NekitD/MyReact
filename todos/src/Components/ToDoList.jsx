@@ -6,6 +6,7 @@ import DelButton from './DelTool'
 
 export default function ToDoList({name, list}){
     const [todos, setTodos] = useState(list);
+    const [selected, setSelect] = useState(0);
 
     function addTodo(todo){
         todo = todos.length;
@@ -14,16 +15,16 @@ export default function ToDoList({name, list}){
 
     function delTodo(todo){
         setTodos(todos.filter(el => el.id !== todo.id));
+        setSelect(0);
     }
-
 
     return (
         <div className='ToDoList'>
             <AddForm addCallback={addTodo}/>
-            <DelButton delCallback={delTodo}/>
+            <DelButton selected={selected} delCallback={delTodo}/>
             <h1 className='ListName'>{name}</h1>
             {todos.map((elem)=>{
-                return <ToDo key={elem.id} todo={elem}/>
+                return <ToDo key={elem.id} todo={elem} selCall={setSelect} selected={selected}/>
             })}
         </div>
     );
