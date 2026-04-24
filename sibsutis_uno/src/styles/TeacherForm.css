@@ -1,0 +1,31 @@
+.Teachers__Form{
+    padding: 2%; 
+    border-radius: 5px;
+    border: 2px solid;
+    width: 60%;
+    flex-direction: column;
+    display: flex;
+}
+
+.Teachers__Header{
+    flex-direction: row;
+    display: flex;
+}
+
+.Teachers__Img{
+    border: 2px solid;
+    width: 195px;
+    height: 225px;
+}
+
+.Teachers__Name{
+    border: 2px solid;
+    margin-left: 5%;
+    width: 75%;
+    height: 50%;
+}
+
+.Teachers__Description{
+    border: 2px solid;
+    height: 40%;
+}
