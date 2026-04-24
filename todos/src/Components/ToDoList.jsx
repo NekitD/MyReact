@@ -26,7 +26,7 @@ export default function ToDoList({name, list}){
         <div className='ToDoList'>
             <AddForm addCallback={addTodo}/>
             <DelButton selected={selected} delCallback={delTodo}/>
-            <h1 className='ListName'>{name}</h1>
+            <h1 className='ToDoList__ListName'>{name}</h1>
             {todos.map((elem)=>{
                 return <ToDo key={elem.id} todo={elem} selCall={selectHandler} selected={selected}/>
             })}

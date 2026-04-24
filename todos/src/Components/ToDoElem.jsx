@@ -10,9 +10,9 @@ export default function ToDoElem({todo, selCall, selected}){
     }
     return (
         <div className='ToDo' style={style}  onClick={()=>{selCall(todo)}}>
-            <h1 className='id'>{todo.id}</h1>
-            <h1 className='name'>{todo.name}</h1>
-            <h1 className='status'>{todo.status}</h1>
+            <h1 className='ToDo__id'>{todo.id}</h1>
+            <h1 className='ToDo__name'>{todo.name}</h1>
+            <h1 className='ToDo__status'>{todo.status}</h1>
         </div>
     );
 }
