@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function AddTool({addCallback}){
+    const [name, setName] = useState('');
     return (
         <form className='AddTool'>
-            <input type="text" id="name" placeholder='Название' required/>
+            <input type="text" id="name" placeholder='Название' onChange={(e)=>{setName(e.target.value)}} required/>
             <button onClick={(event)=>{
-                        const data = new FormData(this)
                         event.preventDefault(); 
-                        addCallback({name: data.name, status: "Получено"});
+                        addCallback({name: name, status: "Получено"});
+                        setName('');
                     }
                 }>
                 Создать
