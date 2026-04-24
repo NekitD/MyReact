@@ -1,0 +1,22 @@
+.Teachers{
+    background-color: rgb(215, 224, 250);
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    height: 60vh;
+}
+
+.Teachers__Info{
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    display: flex;
+    width: 60%;
+}
+
+.Teachers__List{
+    background-color: rgba(161, 162, 233, 0.664);
+    flex-direction: column;
+    display: flex;
+    width: 40%;
+    gap: 1%;
+}

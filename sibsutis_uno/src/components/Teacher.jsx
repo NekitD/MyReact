@@ -3,7 +3,7 @@ import '../styles/Teacher.css'
 
 export default function Teacher({data}){
     return (
-        <button className='TeachersList__Teacher'>
+        <button className='Teachers__Teacher'>
             {data.name}
         </button>
     );

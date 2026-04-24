@@ -1,3 +1,11 @@
-.Teacher{
-    background-color: lightgrey;
+.Teachers__Teacher{
+    background-color: rgb(208, 215, 233);
+    height: 60px;
+    font-size: 200%;
+}
+
+.Teachers__Teacher:hover{
+    background-color: rgb(0, 57, 201);
+    color: white;
+    font-weight: bold;
 }

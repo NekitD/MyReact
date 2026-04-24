@@ -2,7 +2,7 @@ import './styles/App.css';
 import Preview from './components/Preview'
 import Navbar from './components/Navbar'
 import { useState } from 'react';
-import Teachers from './components/TeachersList'
+import Teachers from './components/Teachers'
 
 export default function App() {
 
