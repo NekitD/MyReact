@@ -1,11 +1,18 @@
-.NavButton{
+.Navbar__button{
     border-radius: 5px;
     color:black;
     background-color: azure;
+    height: 80%;
+    width: 25%;
+    margin-left: 1%;
+    margin-right: 1%;
+    font-size: 300%;
 }
 
-.NavButton-cover{
+.Navbar__button:hover{
     border-radius: 5px;
-    color:black;
-    background-color: rgba(19, 241, 67, 0.767);
+    color:whitesmoke;
+    font-weight: bold;
+    background-color: rgb(2, 17, 87);
+    opacity: 100%;
 }

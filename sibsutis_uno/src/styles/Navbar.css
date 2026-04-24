@@ -3,4 +3,8 @@
     height: 10%;
     background-color: rgba(69, 122, 235, 0.582);
     opacity: 50%;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
