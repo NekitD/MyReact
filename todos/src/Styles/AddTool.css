@@ -1,0 +1,6 @@
+.AddTool{
+    flex-direction: column;
+    display: flex;
+    width: 70%;
+    height: 30%;
+}
