@@ -9,7 +9,7 @@ export default function ToDoList({name, list}){
     const [selected, setSelect] = useState(0);
 
     function addTodo(todo){
-        todo = todos.length;
+        todo.id = todos.length + 1;
         setTodos([...todos, todo]);
     }
 
@@ -18,13 +18,17 @@ export default function ToDoList({name, list}){
         setSelect(0);
     }
 
+    function selectHandler(todo){
+        setSelect((todo.id !== selected.id ? todo : 0));
+    }
+
     return (
         <div className='ToDoList'>
             <AddForm addCallback={addTodo}/>
             <DelButton selected={selected} delCallback={delTodo}/>
             <h1 className='ListName'>{name}</h1>
             {todos.map((elem)=>{
-                return <ToDo key={elem.id} todo={elem} selCall={setSelect} selected={selected}/>
+                return <ToDo key={elem.id} todo={elem} selCall={selectHandler} selected={selected}/>
             })}
         </div>
     );
