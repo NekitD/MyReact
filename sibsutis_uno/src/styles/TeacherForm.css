@@ -3,8 +3,12 @@
     border-radius: 5px;
     border: 2px solid;
     width: 60%;
+    height: 150%;
     flex-direction: column;
     display: flex;
+    margin-right: 1%;
+    margin-left: 1%;
+    background-color: rgb(215, 224, 250);
 }
 
 .Teachers__Header{
@@ -16,6 +20,7 @@
     border: 2px solid;
     width: 195px;
     height: 225px;
+    background-color: rgb(255, 255, 255);
 }
 
 .Teachers__Name{
@@ -23,9 +28,11 @@
     margin-left: 5%;
     width: 75%;
     height: 50%;
+    background-color: rgb(255, 255, 255);
 }
 
 .Teachers__Description{
     border: 2px solid;
-    height: 40%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
 }
