@@ -6,8 +6,16 @@ export default function App() {
   const tabs = [{name: "Предметы"}, {name: "Преподы"}]
   return (
     <div className="App">
-      <Preview/>
-      <Navbar tabs={tabs}/>
+      <div className='App__header'>
+        <Preview/>
+        <Navbar tabs={tabs}/>
+      </div>
+      <div className='App__body'>
+
+      </div>
+      <div className='App__footer'>
+
+      </div>
     </div>
   );
 }
