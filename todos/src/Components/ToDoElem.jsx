@@ -1,4 +1,5 @@
 import React from 'react'
+import '../Styles/ToDoElem.css'
 
 export default function ToDoElem({todo}){
     return (
