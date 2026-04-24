@@ -1,4 +1,36 @@
 .ToDo{
+    height: 100px;
+    width: 100%;
+    align-items: center;
     flex-direction: row;
     display: flex;
+    border: 2px solid blue;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: rgb(178, 157, 255);
+}
+
+.id{
+    padding-top: 5%;
+    width: 20%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.name{
+    width: 60%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    border-left: 2px solid blue;
+}
+
+.status{
+    width: 20%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    border-left: 2px solid blue;
 }

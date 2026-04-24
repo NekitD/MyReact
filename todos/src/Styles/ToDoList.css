@@ -1,0 +1,12 @@
+.ToDoList{
+    height: auto;
+    width: 50%;
+    align-items: center;
+    margin: 5%;
+    border: 2px solid blue;
+    padding: 3%;
+    flex-direction: column;
+    display: flex;
+    gap: 10%;
+    background-color: aliceblue;
+}
