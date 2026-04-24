@@ -11,22 +11,43 @@
     background-color: rgb(215, 224, 250);
 }
 
+h2{
+    margin-left: 5%;
+}
+
 .Teachers__Header{
     flex-direction: row;
     display: flex;
+    height: 70%;
 }
 
 .Teachers__Img{
+    margin-top: 9%;
     border: 2px solid;
     width: 195px;
     height: 225px;
     background-color: rgb(255, 255, 255);
 }
 
+.Teachers__Names{
+    width: 75%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+}
+
 .Teachers__Name{
     border: 2px solid;
     margin-left: 5%;
-    width: 75%;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+}
+
+.Teachers__Nick{
+    border: 2px solid;
+    margin-left: 5%;
+    width: 100%;
     height: 50%;
     background-color: rgb(255, 255, 255);
 }

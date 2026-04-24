@@ -7,10 +7,13 @@ import Teachers from './components/Teachers'
 export default function App() {
 
   const [selectedTab, setSelectedTab] = useState(0);
-
   const tabs = [{id: 1, name: "Предметы"}, {id: 2, name: "Преподы"}]
   const teachers = [
-    {id: 1, name: "Трофимов Виктор Куприянович"}, 
+    {id: 1, name: "Трофимов Виктор Куприянович", 
+      nickname: " Куприяныч",
+      description: "Не уметь решать дифференциальные уравнения второго порядка с определёнными коэффициентами и специальной правой частью - это зашквар! Вы что, не умеете решать квадратные уравнения?",
+      image: "/img/trofimov.jpg"
+    }, 
     {id: 2, name: "Милешко Антон Владимирович"}, 
     {id: 3, name: "Чудинов Сергей Клэшроялевич"},
     {id: 4, name: "Агалаков Антон Александрович"},
