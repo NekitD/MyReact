@@ -1,6 +1,10 @@
 .AddTool{
-    flex-direction: column;
+    flex-direction: row;
     display: flex;
     width: 70%;
-    height: 30%;
+}
+
+.AddTool__field{
+    width: 100%;
+    height: 50%;
 }
