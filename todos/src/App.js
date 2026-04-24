@@ -24,9 +24,11 @@ function App() {
             status: "Получено"
         },
     ];
+
+  let name = "МОИ ДЕЛА"
   return (
     <div className="App">
-      <ToDoList list={todos}/>
+      <ToDoList name={name} list={todos}/>
     </div>
   );
 }
