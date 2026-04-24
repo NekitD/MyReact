@@ -1,0 +1,11 @@
+.NavButton{
+    border-radius: 5px;
+    color:black;
+    background-color: azure;
+}
+
+.NavButton-cover{
+    border-radius: 5px;
+    color:black;
+    background-color: rgba(19, 241, 67, 0.767);
+}
