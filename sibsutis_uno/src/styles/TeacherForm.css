@@ -12,6 +12,7 @@
 }
 
 h2{
+    margin: 1%;
     margin-left: 5%;
 }
 
@@ -39,19 +40,19 @@ h2{
 }
 
 .Teachers__Name{
+    padding: 1%;
     border: 2px solid;
     margin-left: 5%;
     width: 100%;
-    height: 50%;
     background-color: rgb(255, 255, 255);
     font-size: 250%;
 }
 
 .Teachers__Nick{
+    padding: 1%;
     border: 2px solid;
     margin-left: 5%;
     width: 100%;
-    height: 50%;
     background-color: rgb(255, 255, 255);
     font-size: 250%;
 }
