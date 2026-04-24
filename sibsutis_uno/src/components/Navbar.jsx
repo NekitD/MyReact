@@ -6,7 +6,13 @@ export default function Navbar({tabs, callback, selected}){
     return (
         <div className='Navbar'>
             {tabs.map((tab)=>{
-                return <Tab key={tab.id} id={tab.id} name={tab.name} callback={callback} selected={selected}/>})
+                return (
+                <Tab key={tab.id} 
+                    id={tab.id} 
+                    name={tab.name} 
+                    callback={callback} 
+                    selected={selected}/>
+                )})
             }
         </div>
     );

@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/NavButton.css'
 
 export default function NavButton({id, name, callback, selected}){
-    let style = (selected === id) ? {backgroundColor: "green"} : {}
+    let style = (selected === id) ? {backgroundColor: "green"} : {};
     return (
         <button className='Navbar__button' style={style} 
             onClick={

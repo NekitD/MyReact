@@ -9,7 +9,13 @@ export default function Teachers({data}){
         <div className='Teachers'>
             <Form teacher={selectedTeach}/>
             <div className='Teachers__List'>
-                {data.map((teacher)=>{return <Teacher key={teacher.id} data={teacher} callback={setSelectedTeach}/>})}
+                {data.map((teacher)=>{
+                    return (
+                    <Teacher key={teacher.id} 
+                        data={teacher} 
+                        callback={setSelectedTeach} 
+                        selected={selectedTeach}/>
+                        )})}
             </div>
         </div>
     );
