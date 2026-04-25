@@ -33,7 +33,7 @@ export default function Teachers({data, filters}){
                         data={teacher} 
                         callback={setSelectedTeach} 
                         selected={selectedTeach}/>
-                        )})}
+                    )})}
             </div>
         </div>
     );
