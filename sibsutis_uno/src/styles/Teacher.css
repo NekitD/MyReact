@@ -3,6 +3,7 @@
     background-color: rgb(208, 215, 233);
     height: 60px;
     font-size: 200%;
+    border-radius: 10px;
 }
 
 .Teachers__Teacher:hover{

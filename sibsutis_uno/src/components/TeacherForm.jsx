@@ -9,7 +9,6 @@ export default function TeacherForm({data}){
                 <div className='Teachers__Header'>
                     <img className='Teachers__Img' src={data?.image}/>
                     <div className='Teachers__Names'>
-                        <h2>Полное имя:</h2>
                         <h1 className='Teachers__Name'>{(data.name) ? data.name : "..."}</h1>
                         <h2>A.k.a:</h2>
                         <h2 className='Teachers__Nick'>{(data.nickname) ? data.nickname : "..."}</h2>

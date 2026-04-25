@@ -47,11 +47,13 @@ h2{
 }
 
 .Teachers__Names{
+    padding-top: 1%;
     width: 75%;
-    height: 100%;
+    height: 90%;
     flex-direction: column;
     display: flex;
     text-align: center;
+    padding-bottom: 1%;
 }
 
 .Teachers__Name{
@@ -59,7 +61,7 @@ h2{
     border: 2px solid;
     margin-left: 5%;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(159, 200, 255);
     font-size: 250%;
 }
 
@@ -68,7 +70,7 @@ h2{
     border: 2px solid;
     margin-left: 5%;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(159, 200, 255);
     font-size: 250%;
 }
 
@@ -77,5 +79,5 @@ h2{
     font-size: 200%;
     border: 2px solid;
     height: 80%;
-    background-color: rgb(255, 255, 255);
+    background-color: #d7e8ff;
 }
