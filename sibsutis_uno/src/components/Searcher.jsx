@@ -1,11 +1,18 @@
 import React, { useState } from 'react'
 import '../styles/Searcher.css'
 
-export default function Searcher({filters}){
+export default function Searcher({filters, filterString, setFilterString}){
     const [activeFilters, setActiveFilters] = useState(false);
     return (
         <div className='Searcher'>
-            <input className='Searcher__String' type='text' placeholder='Поиск'/>
+            <input className='Searcher__String' 
+                type='text' value={filterString} 
+                placeholder='Поиск' 
+                onChange={
+                    (e)=>{
+                        setFilterString(e.target.value)
+                    }}
+            />
             <button className='Searcher__FilterOpener' onClick={()=>{setActiveFilters(activeFilters === false)}}>
                 {(activeFilters) ? "Фильтры >" : "Фильтры <"}
             </button>
