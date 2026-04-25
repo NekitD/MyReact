@@ -27,10 +27,14 @@ h2{
     margin-left: 5%;
 }
 
+.Teachers__Deschead{
+    margin: 1%;
+}
+
 .Teachers__Header{
     flex-direction: row;
     display: flex;
-    height: 70%;
+    height: 50%;
     align-items: center;
 }
 

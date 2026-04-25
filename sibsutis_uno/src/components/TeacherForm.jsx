@@ -15,7 +15,7 @@ export default function TeacherForm({data}){
                         <h2 className='Teachers__Nick'>{(data.nickname) ? data.nickname : "..."}</h2>
                     </div>
                 </div>
-                <h1>Описание:</h1>
+                <h1 className='Teachers__Deschead'>Описание:</h1>
                 <div className='Teachers__Description'>
                     {data?.description}
                 </div>
