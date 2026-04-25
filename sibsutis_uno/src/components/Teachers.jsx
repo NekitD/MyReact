@@ -9,14 +9,14 @@ export default function Teachers({data, filters}){
     const [filterString, setFilterString] = useState('');
     const [filteredData, setFilteredData] = useState(data);
 
-    function filterStringChanged(val){
-        setFilterString(val);
-        if(filterString && filterString.length !== 0){
-            setFilteredData(data.filter(el => el.name.includes(filterString)));
-        }else{
-            setFilteredData(data);
-        }
-    }
+    setTimeout(()=>{
+            if(filterString && filterString.length !== 0){
+                setFilteredData(data.filter(el => el.name.toLowerCase().includes(filterString.toLowerCase())));
+            }else{
+                setFilteredData(data);
+            }
+        }, 500
+    );
 
     return (
         <div className='Teachers'>
@@ -25,7 +25,7 @@ export default function Teachers({data, filters}){
                 <Searcher 
                     filters={filters} 
                     filterString={filterString} 
-                    setFilterString={filterStringChanged}
+                    setFilterString={setFilterString}
                 />
                 {filteredData?.map((teacher)=>{
                     return (

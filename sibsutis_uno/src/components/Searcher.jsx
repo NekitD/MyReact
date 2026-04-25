@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import '../styles/Searcher.css'
 
-export default function Searcher({filters, filterString, setFilterString}){
+export default function Searcher({filters, filterString, setFilterString,}){
     const [activeFilters, setActiveFilters] = useState(false);
     return (
         <div className='Searcher'>
@@ -10,7 +10,7 @@ export default function Searcher({filters, filterString, setFilterString}){
                 placeholder='Поиск' 
                 onChange={
                     (e)=>{
-                        setFilterString(e.target.value)
+                        setFilterString(e.target.value);
                     }}
             />
             <button className='Searcher__FilterOpener' onClick={()=>{setActiveFilters(activeFilters === false)}}>
