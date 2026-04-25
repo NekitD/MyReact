@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Teachers from './components/Teachers'
 import TeachersData from "./data/teachers.json"
 import TabsData from "./data/tabs.json"
+import TeacherFilters from "./data/teachers_filters.json"
 
 export default function App() {
 
@@ -18,7 +19,7 @@ export default function App() {
         <Navbar tabs={tabs} callback={setSelectedTab} selected={selectedTab}/>
       </div>
       <div className='App__body'>
-        {(selectedTab === 2) ? <Teachers data={teachers}/> : null}
+        {(selectedTab === 2) ? <Teachers data={teachers} filters={TeacherFilters}/> : null}
       </div>
       <div className='App__footer'>
 
