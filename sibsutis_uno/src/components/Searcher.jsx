@@ -6,7 +6,9 @@ export default function Searcher({filters}){
     return (
         <div className='Searcher'>
             <input className='Searcher__String' type='text' placeholder='Поиск'/>
-            <button className='Searcher__FilterOpener' onClick={()=>{setActiveFilters(activeFilters === false)}}/>
+            <button className='Searcher__FilterOpener' onClick={()=>{setActiveFilters(activeFilters === false)}}>
+                {(activeFilters) ? "Фильтры >" : "Фильтры <"}
+            </button>
             {
                 (activeFilters) ?
                 <div className='Searcher__Filters'>
@@ -15,17 +17,19 @@ export default function Searcher({filters}){
                             return (
                                 <div className='Searcher__Filter'>
                                     <h4>{filter.name}</h4>
-                                    {filter.values.map((value)=>{
-                                        return (
-                                            <button className='Searcher__FilterValue'>
-                                                {value}
-                                            </button>
-                                        );
-                                    })}
-                                </div>
-                            );
-                        })
-                    }
+                                    <div className='Searcher__FilterValues'>
+                                        {filter.values.map((value)=>{
+                                            return (
+                                                <button className='Searcher__FilterValue'>
+                                                    {value}
+                                                </button>
+                                            );
+                                        })}
+                                        </div>
+                                    </div>
+                                );
+                            })
+                        }
                 </div>
                 : null
             }

@@ -1,0 +1,40 @@
+.Searcher{
+    width: 100%;
+    padding: 0.5%;
+    flex-direction: column;
+    display: flex;
+}
+
+.Searcher__FilterOpener{
+    width: 30%;
+    height: 30px;
+    font-size: 120%;
+    font-weight: bolder;
+}
+
+h4{
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.Searcher__String{
+    width: 95%;
+    height: 40px;
+    font-size: 200%;
+    margin: 1%;
+}
+
+.Searcher__FilterValues{
+    grid-template-columns: repeat(3, 33%);
+    display: grid;
+    width: 100%;
+
+}
+
+
+.Searcher__FilterValue{
+    padding: 1%;
+    font-size: 100%;
+}
