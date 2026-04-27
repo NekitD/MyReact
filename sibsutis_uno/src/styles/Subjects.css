@@ -1,0 +1,16 @@
+.Subjects{
+    background-color:aliceblue;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    height: 60vh;
+}
+
+.Subjects__List{
+    margin-right: 1%;
+    background-color: rgba(161, 162, 233, 0.664);
+    flex-direction: column;
+    display: flex;
+    width: 40%;
+    height: 165%;
+}

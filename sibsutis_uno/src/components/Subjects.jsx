@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Searcher from './Searcher';
 import Subject from './Subject';
+import '../styles/Subjects.css'
 
 
 export default function Subjects({data, filters}){
@@ -20,12 +21,12 @@ export default function Subjects({data, filters}){
 
     return (
         <div className='Subjects'>
-            <Searcher 
-                filters={filters} 
-                filterString={filterString} 
-                setFilterString={setFilterString}
-            />
-            <div className='SubjectsList'>
+            <div className='Subjects__List'>
+                <Searcher 
+                    filters={filters} 
+                    filterString={filterString} 
+                    setFilterString={setFilterString}
+                />
                 {
                     filteredData.map((subject)=>{
                         return <Subject key={subject.id}  data={subject} selected={selected} callback={setSelectedSub}/>
