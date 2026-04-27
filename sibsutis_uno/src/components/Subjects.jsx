@@ -5,8 +5,18 @@ import Subject from './Subject';
 
 export default function Subjects({data, filters}){
     const [filterString, setFilterString] = useState('');
-    const [filteredData, setFilteredData] = useState('');
-    const [selected, setSelected] = useState(0);
+    const [filteredData, setFilteredData] = useState([]);
+    const [selected, setSelectedSub] = useState(0);
+
+
+    setTimeout(()=>{
+            if(filterString && filterString.length !== 0){
+                setFilteredData(data.filter(el => el.name.toLowerCase().includes(filterString.toLowerCase())));
+            }else{
+                setFilteredData(data);
+            }
+        }, 500
+    );
 
     return (
         <div className='Subjects'>
@@ -18,7 +28,7 @@ export default function Subjects({data, filters}){
             <div className='SubjectsList'>
                 {
                     filteredData.map((subject)=>{
-                        return <Subject key={subject.id}  data={subject} selected={selected}/>
+                        return <Subject key={subject.id}  data={subject} selected={selected} callback={setSelectedSub}/>
                     })
                 }
             </div>
